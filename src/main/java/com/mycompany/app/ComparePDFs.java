@@ -1,10 +1,16 @@
 import com.testautomationguru.utility.PDFUtil;
-class cmd
+class ComparePDFs
 {
 	public static void main(String[] args)
 	{
 		PDFUtil pdfUtil = new PDFUtil();
 		// pdfUtil.getPageCount(args[0]);
+		pdfUtil.setCompareMode(CompareMode.VISUAL_MODE);
+		boolean param = args[2];
+		if(param==true){
+			pdfUtil.highlightPdfDifference(true);
+			pdfUtil.setImageDestinationPath("./images/");
+		}
 		return pdfUtil.compare(args[0], args[1]);
 	}
 }
