@@ -1,3 +1,4 @@
+package com.testautomationguru.utility.PDFUtil;
 import com.testautomationguru.utility.PDFUtil;
 class ComparePDFs
 {
@@ -6,11 +7,11 @@ class ComparePDFs
 		PDFUtil pdfUtil = new PDFUtil();
 		// pdfUtil.getPageCount(args[0]);
 		pdfUtil.setCompareMode(CompareMode.VISUAL_MODE);
-		boolean param = args[2];
-		if(param==true){
+		// boolean param = args[2];
+		if(args[2]=="true"){
 			pdfUtil.highlightPdfDifference(true);
 			pdfUtil.setImageDestinationPath("./images/");
 		}
-		return pdfUtil.compare(args[0], args[1]);
+		pdfUtil.compare(args[0], args[1]);
 	}
 }

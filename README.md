@@ -14,3 +14,5 @@ TODO in the community bonding period
 
 For comparing two PDFs just run the command, **java ComparePDFs.java file1 file2 true/false**.
 The third parameter which is **true/false** will save the comparision of the pdfs if set *true*.
+I would like to thank [codeborne](https://github.com/codeborne/pdf-test) for making such an awesome opensource
+pdf testing tool, on which I have implemented some functionality to enrich it.
