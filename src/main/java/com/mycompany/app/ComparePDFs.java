@@ -1,4 +1,3 @@
-package com.testautomationguru.utility.PDFUtil;
 import com.testautomationguru.utility.PDFUtil;
 class ComparePDFs
 {
